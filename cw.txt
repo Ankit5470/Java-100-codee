@@ -1,0 +1,43 @@
+import java.io.*;
+interface Vehicle {
+	void GearChange(int a);
+	void SpeedIncrease(int a);
+	void Brakes(int a);
+}
+class Bicycle implements Vehicle{
+	int speed;
+	int gear;
+	public void GearChange(int newGear){
+	gear = newGear;
+}
+	public void SpeedIncrease(int increment)
+{
+		
+		speed = speed + increment;
+	}
+	public void applyBrakes(int decrement){
+		
+		speed = speed - decrement;
+	}
+	
+	public void printStates() {
+		System.out.println("speed: " + speed
+			+ " gear: " + gear);
+	}
+}
+
+W A P to create an interface Add_Sub with two member functions void add(double x, double y)and  void sub(double x, double y)   And anothe interface Mul_Div  void multiply(double x, double y) and void divide(double x, double y)
+and third interface inherites previous two. Create a class my calculator which implements calculate interface and the main method class main interface to print the results of addition substraction multiplication division.
+
+import java.io.*;
+interface Add_Sub
+{
+void add(double x, double y)
+void sub(double x, double y)
+}
+interface Mul_Div
+{
+void multiply(double x, double y)
+void divide(double x, double y)
+}
+interface Calculate extends Add_Sub, Mul_Div

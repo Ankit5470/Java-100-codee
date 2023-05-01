@@ -1,0 +1,2 @@
+Q1: Create a class employee it has two data member employeeid and employeerank and there is a function void get(int id, char r):then there is a member function void
+    print(); Create an array of objects to store data of 5 employes and print their details.
